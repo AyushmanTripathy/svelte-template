@@ -1,0 +1,28 @@
+$bg:#202124;
+$sec:#bbb;
+
+@mixin fullscreen {
+  height:100vh;
+  width:100vw;
+}
+
+@mixin absolute {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin flex($dir) {
+  display:flex;
+  flex-direction:$dir;
+}
+
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin color-scheme {
+  color:$sec;
+  background-color: $bg;  
+}
